@@ -1,0 +1,42 @@
+ls
+ls
+make generate NODE=payment_pci_node OVERLAY_VARS=beta.config && rels/payment_pci_node/rel/payment_pci_node/bin/payment_pci_node console
+find-file rels/payment_pci_node/rebar.config
+find -name *erlcinfo -type f
+find . -name *erlcinfo -type f
+find . -name *erlcinfo -type f -delete
+make generate NODE=payment_pci_node OVERLAY_VARS=beta.config && rels/payment_pci_node/rel/payment_pci_node/bin/payment_pci_node console
+ls
+man
+man ls
+git grep "content"
+erl
+git grep "iso20022"
+ls
+!make
+!make
+!!
+!make
+make
+!!
+!!
+make
+ls
+!ls
+!!
+!!
+!!
+ls
+!!
+make
+!
+!!
+!make
+Welcome to the Emacs shell
+!make
+!make 
+ansi-term 
+ansi-term 
+Wrong number of arguments: (1 .make generate NODE=payment_pci_node OVERLAY_VARS=beta.config && rels/payment_pci_node/rel/payment_pci_node/bin/payment_pci_node console 2), 0
+make generate NODE=payment_pci_node OVERLAY_VARS=beta.config && rels/payment_pci_node/rel/payment_pci_node/bin/payment_pci_node console
+make generate NODE=payment_pci_node OVERLAY_VARS=beta.config && rels/payment_pci_node/rel/payment_pci_node/bin/payment_pci_node console

@@ -1,0 +1,20 @@
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*- 
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("org-capture-last-stored-marker"
+ (filename . "~/Dropbox/Documents/Emacs/sumup.org")
+ (front-context-string . "** TODO OKR mana")
+ (rear-context-string . ": sumup\n  :END:\n")
+ (position . 132))
+("org-refile-last-stored"
+ (filename . "~/Dropbox/Documents/Emacs/sumup.org")
+ (front-context-string . "** TODO Finish D")
+ (rear-context-string . "KRs - Q3.2018]]\n")
+ (position . 3866))
+("org-capture-last-stored"
+ (filename . "~/Dropbox/Documents/Emacs/refile.org")
+ (front-context-string . "* TODO Finish le")
+ (rear-context-string . "%20*%20*\">>},]]\n")
+ (position . 15364))
+)

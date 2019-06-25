@@ -1,0 +1,55 @@
+(require 'package)
+
+;; set packages
+(setq package-archives
+      '(("elpa" . "http://elpa.gnu.org/packages/")
+        ("melpa" . "http://melpa.milkbox.net/packages/")))
+
+;; list the packages you want
+(setq package-list
+      '(company elixir-mode flycheck helm helm-ls-git multiple-cursors ujelly-theme neotree diff-hl magit crux use-package avy ace-window ivy counsel swiper))
+
+;; activate all the packages
+;; (package-initialize)
+
+;; fetch the list of packages available
+;; (unless package-archive-contents
+;;   (package-refresh-contents))
+
+;; install the missing packages
+(dolist (package package-list)
+  (unless (package-installed-p package)
+    (package-install package)))
+
+(setq package-selected-packages (symbol-value 'package-list))
+
+;; setup chords
+(use-package use-package-chords
+  :ensure t
+  :config (key-chord-mode 1))
+
+;; setup ivy
+(use-package ivy
+      :ensure t
+      :diminish ivy-mode
+      :config
+      (ivy-mode t))
+
+;: setup counsel
+(use-package counsel
+    :ensure t
+    :bind (("M-x" . counsel-M-x))
+    :chords (("yy" . counsel-yank-pop)))
+
+;; setup swiper
+(use-package swiper
+    :ensure t
+    :bind (("M-s" . swiper)))
+
+;; enable diff-hl
+(add-hook 'after-init-hook (lambda()
+			     (global-company-mode)
+			     (global-diff-hl-mode)
+			     (my/custom-diff-hl-colors)))
+
+(provide 'packagesw)

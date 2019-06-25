@@ -1,0 +1,22 @@
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   '("a0feb1322de9e26a4d209d1cfa236deaf64662bb604fa513cca6a057ddf0ef64" "04dd0236a367865e591927a3810f178e8d33c372ad5bfef48b5ce90d4b476481" "4154caa8409ff2eb6f74c913741420e7103b9ea26c3c7d1a5a16592d0d2f43e0" "c90fd1c669f260120d32ddd20168343f5c717ca69e95d2f805e42e88430c340e" "0c387e27a3dd040b33c6711ff92e13bd952369a788eee97e4e4ea2335ac5528f" "aae95fc700f9f7ff70efbc294fc7367376aa9456356ae36ec234751040ed9168" "bf798e9e8ff00d4bf2512597f36e5a135ce48e477ce88a0764cfb5d8104e8163" "c9ddf33b383e74dac7690255dd2c3dfa1961a8e8a1d20e401c6572febef61045" "36ca8f60565af20ef4f30783aa16a26d96c02df7b4e54e9900a5138fb33808da" "1e469285a9eee5bb7099711440ab27b571d02aa860c009086ef2d341b4c5d535" "b85fc9f122202c71b9884c5aff428eb81b99d25d619ee6fde7f3016e08515f07" "b34636117b62837b3c0c149260dfebe12c5dad3d1177a758bb41c4b15259ed7e" "e88abed2a39b47dfedb1272066f214cb2c9db28ee6aa1794bfb27948792f81c0" "28ec8ccf6190f6a73812df9bc91df54ce1d6132f18b4c8fcc85d45298569eb53" "d61fc0e6409f0c2a22e97162d7d151dee9e192a90fa623f8d6a071dbf49229c6" "9deeab438d1d798c26d41c759d74a2406802427ff6acb7dec8cec961bcb4e7d5" "c3d4af771cbe0501d5a865656802788a9a0ff9cf10a7df704ec8b8ef69017c68" "021720af46e6e78e2be7875b2b5b05344f4e21fad70d17af7acfd6922386b61e" "6ac7c0f959f0d7853915012e78ff70150bfbe2a69a1b703c3ac4184f9ae3ae02" "ed0b4fc082715fc1d6a547650752cd8ec76c400ef72eb159543db1770a27caa7" "53d1bb57dadafbdebb5fbd1a57c2d53d2b4db617f3e0e05849e78a4f78df3a1b" "723e48296d0fc6e030c7306c740c42685d672fd22337bc84392a1cf92064788a" "5715d3b4b071d33af95e9ded99a450aad674e308abb06442a094652a33507cd2" "891debfe489c769383717cc7d0020244a8d62ce6f076b2c42dd1465b7c94204d" "4e21fb654406f11ab2a628c47c1cbe53bab645d32f2c807ee2295436f09103c6" "bbea3143fe920d2738e73a042d1edcc0e0c1e9726a757dc0b51ca8d5ee825255" "242ed4611e9e78142f160e9a54d7e108750e973064cee4505bfcfc22cc7c61b1" "a866134130e4393c0cad0b4f1a5b0dd580584d9cf921617eee3fd54b6f09ac37" "bd23e5e571f9b951eb79941ba3927fb493c26463654add2a53f4fb0de72ef08b" "bbb4a4d39ed6551f887b7a3b4b84d41a3377535ccccf901a3c08c7317fad7008" "c5d320f0b5b354b2be511882fc90def1d32ac5d38cccc8c68eab60a62d1621f2" "aa0a998c0aa672156f19a1e1a3fb212cdc10338fb50063332a0df1646eb5dfea" "0598de4cc260b7201120b02d580b8e03bd46e5d5350ed4523b297596a25f7403" "c857e49487cf473f1c0e98795b5d94f280b10d2694424ae1649afe44fc325ebc" "9527feeeec43970b1d725bdc04e97eb2b03b15be982ac50089ad223d3c6f2920" default))
+ '(helm-always-two-windows t)
+ '(helm-boring-buffer-regexp-list
+   '("\\` " "\\`\\*helm" "\\`\\*Echo Area" "\\`\\*Minibuf" ".*"))
+ '(helm-split-window-default-side 'below)
+ '(helm-split-window-inside-p nil)
+ '(package-selected-packages
+   '(company flycheck multiple-cursors helm-ls-git helm ujelly-theme elixir-mode))
+ '(split-width-threshold 1)
+ '(window-combination-resize t))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

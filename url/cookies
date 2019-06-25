@@ -1,0 +1,14 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '(("n264.network-auth.com"
+  [url-cookie "p_splash_session" "MOaBXIVP9bbVJICL-X_VPQWOkgpHlv4cbwrUdiDxpb9KV_yrErZxFM4pOU2yKjv9z-s9RTKiZ9U8EwcY_OVSyKdTfIrdl4YSWgNPDU82q67ksZXUgijWTBKei_rUKfKQOiVb0UFgD1q62Wxd-qArRwNCOHvhengfK4lYf_zffYvgRnCbPy923P5AMStRzaV_EcpKVKfRR7rpabeAtOb_xvKQl6IlBRloXCCtbznUNq2qvBpvb5g4GStzEgUy3ucntbT-lUf-_YHdvY_AxAX4PmNyo0HXOEMBzaTds1b9qPwfQHADlDYJUwrGhFTxGSGynLWKNmt-q_zxE0j43cBoMj43ARubJIp50mnXrEG-BPUy0NqB2pSBTvzbiHtKX9XGycTq4J8mV5fMPsXgVSRBFS8baO_Xp-MFEuLwfIefs3Xf1aGvhXsY40XEhNcUXg5vfg58KNq0vjXQUBOknYu9I24ijJlk-YAEEu-_X3RsoiVn9Yav0mqdd8K52lAR5h8Sq46JLM145Uws4tRTrbm8milXfUZoujVPG9At7rO44UMI2cEoeHLgJ_tCnPM3w4miL6ZyjqlQWJmlIbOIuYk7utJ6rDyS275PvJEuLg5c9esdsZGA" "Sat, 09-Mar-2019 17:54:40 GMT" "/" "n264.network-auth.com" nil]))
+)
+(setq url-cookie-secure-storage
+ 'nil)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:
