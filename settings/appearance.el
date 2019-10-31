@@ -23,8 +23,26 @@
   (diff-hl-margin-mode)
   (diff-hl-flydiff-mode))
 
-;; default theme
-(load-theme 'ujelly)
+; import moe-theme
+(require 'moe-theme)
+
+; show highlighted buffer-id as decoration. (Default: nil)
+(setq moe-theme-highlight-buffer-id t)
+
+; resize titles (optional).
+(setq moe-theme-resize-markdown-title '(1.5 1.4 1.3 1.2 1.0 1.0))
+(setq moe-theme-resize-org-title '(1.5 1.4 1.3 1.2 1.1 1.0 1.0 1.0 1.0))
+(setq moe-theme-resize-rst-title '(1.5 1.4 1.3 1.2 1.1 1.0))
+
+; choose a color for mode-line
+(moe-theme-set-color 'blue)
+
+; finally, apply moe-theme now
+(moe-dark)
+
+; setup powerline
+(require 'powerline)
+(powerline-moe-theme)
 
 ;; don't beep. Don't visible-bell (fails on el capitan). Just blink the modeline on errors.
 (setq visible-bell nil)
@@ -57,29 +75,29 @@
  '(window-combination-resize t))
 
 ;; custom colors for the ujelly theme
-(custom-set-faces
- '(col-highlight ((t (:background "color-233"))))
- '(diff-hl-change ((t (:background "#3a81c3"))))
- '(diff-hl-delete ((t (:background "#ee6363"))))
- '(diff-hl-insert ((t (:background "#7ccd7c"))))
- '(erlang-font-lock-exported-function-name-face ((t (:inherit font-lock-function-name-face :foreground "#ffffff"))))
- '(flycheck-error ((t (:background "brown4" :foreground "white"))))
- '(flycheck-warning ((t (:background "gray20"))))
- '(font-lock-constant-face ((t (:foreground "#8fbfdc"))))
- '(font-lock-function-name-face ((t (:foreground "#ffffff"))))
- '(font-lock-preprocessor-face ((t (:foreground "#6290D1"))))
- '(font-lock-string-face ((t (:foreground "#9dab71"))))
- '(font-lock-type-face ((t (:foreground "#98BED3"))))
- '(font-lock-variable-name-face ((t (:foreground "#c2b5e5"))))
- '(hl-line ((t (:background "gray10"))))
- '(lazy-highlight ((t (:background "black" :foreground "white" :underline t))))
- '(neo-dir-link-face ((t (:foreground "#3a81c3"))))
- '(neo-file-link-face ((t (:foreground "white"))))
- '(org-agenda-done ((t (:foreground "lightcyan"))))
- '(org-agenda-structure ((t (:foreground "#3a81c3"))))
- '(org-scheduled ((t (:foreground "brightwhite"))))
- '(org-scheduled-today ((t (:foreground "cornsilk"))))
- '(widget-field ((t (:background "gray15" :foreground "brightwhite")))))
+; (custom-set-faces
+;  '(col-highlight ((t (:background "color-233"))))
+;  '(diff-hl-change ((t (:background "#3a81c3"))))
+;  '(diff-hl-delete ((t (:background "#ee6363"))))
+;  '(diff-hl-insert ((t (:background "#7ccd7c"))))
+;  '(erlang-font-lock-exported-function-name-face ((t (:inherit font-lock-function-name-face :foreground "#ffffff"))))
+;  '(flycheck-error ((t (:background "brown4" :foreground "white"))))
+;  '(flycheck-warning ((t (:background "gray20"))))
+;  '(font-lock-constant-face ((t (:foreground "#8fbfdc"))))
+;  '(font-lock-function-name-face ((t (:foreground "#ffffff"))))
+;  '(font-lock-preprocessor-face ((t (:foreground "#6290D1"))))
+;  '(font-lock-string-face ((t (:foreground "#9dab71"))))
+;  '(font-lock-type-face ((t (:foreground "#98BED3"))))
+;  '(font-lock-variable-name-face ((t (:foreground "#c2b5e5"))))
+;  '(hl-line ((t (:background "gray10"))))
+;  '(lazy-highlight ((t (:background "black" :foreground "white" :underline t))))
+;  '(neo-dir-link-face ((t (:foreground "#3a81c3"))))
+;  '(neo-file-link-face ((t (:foreground "white"))))
+;  '(org-agenda-done ((t (:foreground "lightcyan"))))
+;  '(org-agenda-structure ((t (:foreground "#3a81c3"))))
+;  '(org-scheduled ((t (:foreground "brightwhite"))))
+;  '(org-scheduled-today ((t (:foreground "cornsilk"))))
+;  '(widget-field ((t (:background "gray15" :foreground "brightwhite")))))
 
 (custom-set-faces
  '(elscreen-tab-background-face ((t (:background "Gray50"))))

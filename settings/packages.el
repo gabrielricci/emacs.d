@@ -7,7 +7,7 @@
 
 ;; list the packages you want
 (setq package-list
-      '(company elixir-mode flycheck helm helm-ls-git multiple-cursors ujelly-theme neotree diff-hl magit crux use-package avy ace-window ivy counsel swiper smartparens rainbow-delimiters aggressive-indent restclient markdown-mode))
+      '(company elixir-mode flycheck helm helm-ls-git multiple-cursors neotree diff-hl magit crux use-package avy ace-window ivy counsel swiper smartparens rainbow-delimiters aggressive-indent markdown-mode terraform-mode moe-theme powerline eshell-toggle dumb-jump))
 
 ;; activate all the packages
 ;; (package-initialize)
@@ -23,7 +23,8 @@
 
 (setq package-selected-packages (symbol-value 'package-list))
 
-;; setup chords
+(require 'use-package)
+
 (use-package use-package-chords
   :ensure t
   :config (key-chord-mode 1))
@@ -48,13 +49,6 @@
   :config
   (add-hook 'prog-mode-hook 'rainbow-delimiters-mode))
 
-;; setup org-alert
-(use-package org-alert
-  :ensure t
-  :config
-  (org-alert-enable)
-  (setq alert-default-style 'osx-notifier))
-
 ;; setup company
 (setq company-dabbrev-downcase 0)
 (setq company-idle-delay 0)
@@ -77,6 +71,12 @@
 (use-package restclient
   :ensure t)
 
+(use-package eshell-toggle
+  :ensure t
+  :custom
+  (eshell-toggle-run-command nil)
+  (eshell-toggle-init-function #'eshell-toggle-init-ansi-term))
+
 ;; elscreen
 (use-package elscreen
   :ensure t
@@ -93,5 +93,15 @@
 (setq gofmt-command "goimports")
 (add-hook 'before-save-hook #'gofmt-before-save)
 
+; enable eshell-prompt-extras
+(with-eval-after-load "esh-opt"
+  (autoload 'epe-theme-lambda "eshell-prompt-extras")
+  (setq eshell-highlight-prompt nil
+        eshell-prompt-function 'epe-theme-lambda))
+
+; setup auto-dim-other-buffers
+(add-hook 'after-init-hook (lambda ()
+  (when (fboundp 'auto-dim-other-buffers-mode)
+    (auto-dim-other-buffers-mode t))))
 
 (provide 'packages)

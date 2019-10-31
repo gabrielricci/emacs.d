@@ -21,13 +21,13 @@
 (global-set-key (kbd "C-c h") 'my/split-window-horizon-evenly)
 (global-set-key (kbd "C-c v") 'my/split-window-verti-evenly)
 (global-set-key (kbd "C-c k") 'my/close-window-evenly)
-(key-chord-define-global "wp" 'my/split-window-horizon-evenly)
-(key-chord-define-global "wd" 'delete-window)
+(key-chord-define-global "WP" 'my/split-window-horizon-evenly)
+(key-chord-define-global "WD" 'delete-window)
 (key-chord-define-global "vv" 'elscreen-next)
 
 ;; open a shell in a new window
 (global-set-key (kbd "C-c s") 'my/new-shell-in-new-window)
-(key-chord-define-global "ws" 'my/new-shell-in-new-window)
+(global-set-key (kbd "C-c t") 'my/new-shell-same-window)
 
 ;; open neotree
 (global-set-key (kbd "C-\\") 'neotree-toggle)
@@ -93,5 +93,8 @@
   (setq dumb-jump-quiet t))
 
 (global-set-key [backtab] 'tab-indent-or-complete)
+
+; eshell-toggle
+(global-set-key (kbd "C-h") 'eshell-toggle)
 
 (provide 'bindings)

@@ -1,3 +1,4 @@
+(package-initialize)
 ;; Turn off mouse interface early in startup to avoid momentary display
 ;; From https://github.com/magnars/.emacs.d
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
@@ -17,6 +18,7 @@
 
 ;; load packages
 (require 'packages)
+(package-initialize)
 
 ;; Keep emacs Custom-settings in separate file
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
@@ -56,3 +58,4 @@
 ;; integrate magit with diff-hl
 (add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh)
 (put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)

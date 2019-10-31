@@ -45,7 +45,12 @@
   (interactive)
   (split-window-horizontally)
   (next-multiframe-window)
-  (ansi-term "/bin/bash"))
+  (ansi-term (getenv "SHELL")))
+
+;; open a shell in a new window
+(defun my/new-shell-same-window ()
+  (interactive)
+  (ansi-term (getenv "SHELL")))
 
 ;; line handling
 (defun my/insert-line-above ()

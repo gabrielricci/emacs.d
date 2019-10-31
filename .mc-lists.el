@@ -3,6 +3,7 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        counsel-M-x
         crux-kill-whole-line
         crux-move-beginning-of-line
         crux-smart-kill-line
@@ -12,14 +13,18 @@
         eval-print-last-sexp
         indent-for-tab-command
         kill-region
+        markdown-outdent-or-delete
+        my/insert-line-above
         org-delete-char
         org-self-insert-command
+        upcase-region
         xterm-paste
         ))
 
 (setq mc/cmds-to-run-once
       '(
         avy-goto-line
+        elscreen-next
         erlang-electric-gt
         erlang-electric-semicolon
         find-file

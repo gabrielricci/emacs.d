@@ -40,3 +40,75 @@ ansi-term
 Wrong number of arguments: (1 .make generate NODE=payment_pci_node OVERLAY_VARS=beta.config && rels/payment_pci_node/rel/payment_pci_node/bin/payment_pci_node console 2), 0
 make generate NODE=payment_pci_node OVERLAY_VARS=beta.config && rels/payment_pci_node/rel/payment_pci_node/bin/payment_pci_node console
 make generate NODE=payment_pci_node OVERLAY_VARS=beta.config && rels/payment_pci_node/rel/payment_pci_node/bin/payment_pci_node console
+ls
+ls
+ls
+pwd
+pwd
+/bin/bash/
+./bin/bash/
+docker ps
+ls
+docker ps
+ls
+docker-compose ps
+docker-compose ps
+bank-dev test
+man ls
+docker-compose ps
+topdocker-compose ps
+top
+top
+docker ps
+alias ee 'find-file-other-window $1'
+ee terragrunt
+ee terragrunt.hcl
+(+ 1 6)
++ 1 123
+ls 
+length *
+ ~/Projects/bank-ledger   MASTER   16:27   0
+l
+ls
+cd ~/
+ls
+cd Projects/sumup-payment-pci/
+ls
+top
+ls
+cd ~/Projects/sumup-payment-pci/
+use-theme
+ls
+cd ~/Projects/sumup-payment-pci/
+ls
+ls
+pwd
+pwd
+ls
+clear
+cd ~/Projects/bank-cip-processor/
+ls
+pwd
+top
+greep
+ls
+cd ~/Projects/gabrielricci-coding-exercises/
+ls
+ls
+cd ..
+ls
+read 
+a = read 
+$a = read 
+cd bank-infrastructure
+ls
+cd prod
+ls
+cd _global/
+ls
+cd iam-cross-account/
+ls
+cd ..
+ls
+cd route53-public/
+read a

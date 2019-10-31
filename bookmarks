@@ -14,7 +14,7 @@
  (position . 3866))
 ("org-capture-last-stored"
  (filename . "~/Dropbox/Documents/Emacs/refile.org")
- (front-context-string . "* TODO Finish le")
- (rear-context-string . "%20*%20*\">>},]]\n")
- (position . 15364))
+ (front-context-string . "* ElixirConf - D")
+ (rear-context-string . "/challenge.ex]]\n")
+ (position . 20578))
 )
