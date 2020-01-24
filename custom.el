@@ -24,7 +24,7 @@
  '(org-scheduled-today ((t (:foreground "white"))))
  '(package-selected-packages
    (quote
-    (flycheck-elixir alchemist gnu-elpa-keyring-update eshell-toggle exec-path-from-shell moe-theme color-theme-sanityinc-tomorrow auto-dim-other-buffers terraform-mode gist elscreen markdown-mode go-mode company elixir-mode flycheck helm helm-ls-git multiple-cursors neotree diff-hl magit crux use-package avy ace-window ivy counsel swiper smartparens rainbow-delimiters aggressive-indent restclient)))
+    (yaml-mode dockerfile-mode lua-mode flycheck-elixir alchemist gnu-elpa-keyring-update eshell-toggle exec-path-from-shell moe-theme color-theme-sanityinc-tomorrow auto-dim-other-buffers terraform-mode gist elscreen markdown-mode go-mode company elixir-mode flycheck helm helm-ls-git multiple-cursors neotree diff-hl magit crux use-package avy ace-window ivy counsel swiper smartparens rainbow-delimiters aggressive-indent restclient)))
  '(split-width-threshold 1)
  '(window-combination-resize t))
 (custom-set-faces
